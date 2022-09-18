@@ -10,7 +10,7 @@ export default class ShowPage extends Component {
                 <section id="home">
                 <div className="container-showPage">
                     <div className="introducing">
-                        <h2>Hello I'm Pedro</h2><br/>
+                        <h2>Hello I'm Pedro 27</h2><br/>
                         <p>Welcome to my Profile</p>
                     </div>
                     <div className="picture-profile">
