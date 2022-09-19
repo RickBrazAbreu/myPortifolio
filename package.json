@@ -1,9 +1,8 @@
 {
   "name": "portifoliopedro",
   "version": "0.1.0",
-  "description": "a really cool portifolio",
   "engines": {
-    "node": "6.11.1"
+    "node": "18.7.0"
   },
   "private": true,
   "dependencies": {
