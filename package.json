@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "a really cool app",
   "engines": {
-    "node": "18.7.0"
+    "npm": "7.x",
+    "node": "18.x"
   },
   "private": true,
   "dependencies": {
