@@ -10,7 +10,6 @@ import ShowPage from './components/showPage';
 function App() {
   return (
     <div >
-
       <NavBarTop/>
       <ShowPage/>
 
