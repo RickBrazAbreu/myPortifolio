@@ -41,8 +41,16 @@
     margin-right: 15%;
 }
 .picture-profile{
+   
     width: 200px;
     height: auto;
+}
+.picture-profile:hover{
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+.prof-pic{
+    border-radius: 20px;
 }
 
 /* ------------------------------ */

@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 // import { Nav} from 'react-bootstrap';
 import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
 
-// import Typical from 'react-typical'
+import Typical from 'react-typical'
 
 
 
@@ -24,12 +24,13 @@ export default class ShowPage extends Component {
                         <div className="introducing">
 
                             <h1 className="word-color-white">Hey, I'm Pedro.</h1><br/>
-                            <a className="word-color-white">Full Stack Software Engineering from<br/>General Assembly Alumni.</a> 
-                            <a className="word-color-white"> I create custom websites<br/>  to help businesses do better online.</a>
+                            <h3 className="word-color-white">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
+                            <h3 className="word-color-white"> I create custom websites<br/>  to help businesses do better online.</h3>
                             <div>
                                 {/* HERE I made the text effect infinity loop in movement,.. */}
-                                {/* {""}
+                                {""}
                                 <Typical 
+                                className="word-color-white"
                                 loop={Infinity} 
                                 //Steps Changing following time "1000.."
                                 steps={[ 
@@ -42,12 +43,12 @@ export default class ShowPage extends Component {
                                     "Mongo Db / Express 💻",
                                     2000,
                                 ]}
-                                /> */}
+                                />
                             </div>
                             {/* <a>Fluent Portuguese English Spanish Game Developer</a> */}
                         </div>
                         <div className="picture-profile">
-                        <img src={profilePicture} class="img-fluid" alt="Responsive image"/>
+                        <img src={profilePicture} class="img-fluid prof-pic" alt="Responsive image"/>
                         </div>
                     </div>
                 </section>
