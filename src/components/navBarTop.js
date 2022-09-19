@@ -25,7 +25,7 @@ export default class NavBarTop extends Component {
                             Separated link
                             </NavDropdown.Item>
                         </NavDropdown> */}
-                        {/* ola ..*/}
+                        {/* ola antes de contaa..c.*/}
                         
                         </Nav>
                     </Navbar.Collapse>
