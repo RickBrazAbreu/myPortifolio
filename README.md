@@ -42,3 +42,14 @@ ________________________________________________________________________________
 - Now to upload new changes just "git push origin main"
 
 - For deployment I used heroku, but the heroku stack 22, wans't working , so I had to use this comand " heroku create --remote heroku-20 Name-Project " and then the building finally worked.
+
+
+# Issues npm node version
+- To fix this issue I had to specify the npm and node version. 
+- I had to put like this 
+    "engines": {
+        "npm": "7.x",
+        "node": "18.x"
+    },
+- I used the link below
+- https://devcenter.heroku.com/articles/nodejs-support#specifying-a-node-js-version

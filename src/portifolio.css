@@ -23,7 +23,11 @@
 }
 
 
-
+/* cards-proejcts box- adjustes */
+.cards-space{
+    /* margin-right: 5rem; */
+}
+/* --------------------------------------- */
 
 
 
@@ -108,8 +112,22 @@
 .bg-color-1{
     background-color: rgb(94, 94, 205);
     width: 100%;
-    height: 600px;
+    height: 100vh;
 }
+.container-cards{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cardss{
+    margin-right: 10px;
+    margin-top: 10px;
+    /* margin: 2px, 5px, 2px, 2px ; */
+}
+
+
+
+
 .bg-color-2{
     background-color: rgb(59, 169, 171);
     width: 100%;
@@ -148,7 +166,9 @@
 /*  ---------------------------  */
 
 
-
+.project-picture-1{
+    background-image: url('./imgs/medics.jpeg');
+}
 
 
 

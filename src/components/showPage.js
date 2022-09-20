@@ -4,21 +4,33 @@ import Image from 'react-bootstrap/Image'
 import profilePicture from '../imgs/profile.JPEG'
 import Button from 'react-bootstrap/Button';
 // import { Nav} from 'react-bootstrap';
-import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
-
+import { Navbar, Nav, NavDropdown, Container, Row} from 'react-bootstrap'
 import Typical from 'react-typical'
+import CardsProjects from "../cards/cards";
+import ProjectPicture1 from '../imgs/medics.jpeg'
+import Card from 'react-bootstrap/Card';
+
+
+
 
 
 
 
 export default class ShowPage extends Component {
     render() {
+        // STYLE FOR CARDs
+        const cardContainerStyle = {
+            display: 'flex',
+            flexFlow: 'row wrap',
+            
+        }
         
         
         return(
             <div className="hold-everything-pg1" >
                 <div className="hold-sections">
                 
+                {/* SECTION 1 */}
                 <section id="home">
                     <div className="container-showPage">
                         <div className="introducing">
@@ -53,21 +65,157 @@ export default class ShowPage extends Component {
                     </div>
                 </section>
 
+                {/* SECTION 2 */}
                 <section  id="about-me">
                     <div className="bg-color-1">
-                        <h1>section 2</h1>
-                        <Nav.Link id="btn-home" className="btn-home" href="#home" >
+                        <h1>PROJECTS</h1>
+                        {/* \// STYLE FOR CARDs
+                            const cardContainerStyle = {
+                                display: 'flex',
+                                flexFlow: 'row wrap',
+
+                                <Col md='4'>
+                                <Card style={{width: '100%', margin: 5, borderRadius:'20px', backgroundColor:'rgb(58 ,95, 95)', color:'white'}} key={patient._id}>
+                                    <Card.Header>{ patient.name }</Card.Header>
+                                    <Link to={`/patients/${patient._id}`}>
+                                        <Image fluid={true} src={profilePicture} alt='placeholder image for patient photo'/>
+                                    </Link>
+                                    <Card.Body>
+                                        <Card.Text>
+                                            <Link style={{color: 'white'}} to={`/patients/${patient._id}`}>View</Link> 
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                                
+                            } */}
+                            <Container>
+                                <div style={cardContainerStyle} className='cards-fix'>
+                                    <div className="cardss">
+                                        <Card style={{ width: '18rem' }}>
+                                            <Card.Img variant="top" src={ProjectPicture1} />
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                Some quick example text to build on the card title and make up the
+                                                bulk of the card's content.
+                                                </Card.Text>
+                                                <Button variant="primary">Go somewhere</Button>
+                                            </Card.Body>
+                                        </Card>
+                                    </div>
+                                    <div className="cardss">
+                                        <Card style={{ width: '18rem' }}>
+                                            <Card.Img variant="top" src={ProjectPicture1} />
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                Some quick example text to build on the card title and make up the
+                                                bulk of the card's content.
+                                                </Card.Text>
+                                                <Button variant="primary">Go somewhere</Button>
+                                            </Card.Body>
+                                        </Card>
+                                    </div>
+                                    <div className="cardss">
+                                        <Card style={{ width: '18rem' }}>
+                                            <Card.Img variant="top" src={ProjectPicture1} />
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                Some quick example text to build on the card title and make up the
+                                                bulk of the card's content.
+                                                </Card.Text>
+                                                <Button variant="primary">Go somewhere</Button>
+                                            </Card.Body>
+                                        </Card>
+                                    </div>
+                                </div>
+                                
+                            </Container>
+                        
+                       
+                            {/* <div className="row">
+                                <div className="container-cards col-md-3 cards-space">
+                                    <div className="cards-box">
+                                        <Card style={{ width: '18rem' }}>
+                                            <Card.Img variant="top" src={ProjectPicture1} />
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                Some quick example text to build on the card title and make up the
+                                                bulk of the card's content.
+                                                </Card.Text>
+                                                <Button variant="primary">Go somewhere</Button>
+                                            </Card.Body>
+                                        </Card>
+                                    </div>
+                                    <div className="cards-box">
+                                        <Card style={{ width: '18rem' }}>
+                                            <Card.Img variant="top" src={ProjectPicture1} />
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                Some quick example text to build on the card title and make up the
+                                                bulk of the card's content.
+                                                </Card.Text>
+                                                <Button variant="primary">Go somewhere</Button>
+                                            </Card.Body>
+                                        </Card>
+                                    </div>
+                                    <div className="cards-box">
+                                        <Card style={{ width: '18rem' }}>
+                                            <Card.Img variant="top" src={ProjectPicture1} />
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                Some quick example text to build on the card title and make up the
+                                                bulk of the card's content.
+                                                </Card.Text>
+                                                <Button variant="primary">Go somewhere</Button>
+                                            </Card.Body>
+                                        </Card>
+                                    </div>
+                                    <div className="cards-box">
+                                        <Card style={{ width: '18rem' }}>
+                                            <Card.Img variant="top" src={ProjectPicture1} />
+                                            <Card.Body>
+                                                <Card.Title>Card Title</Card.Title>
+                                                <Card.Text>
+                                                Some quick example text to build on the card title and make up the
+                                                bulk of the card's content.
+                                                </Card.Text>
+                                                <Button variant="primary">Go somewhere</Button>
+                                            </Card.Body>
+                                        </Card>
+                                    </div>
+                                    
+                                    
+                                   
+                                </div>
+
+                                
+                            </div> */}
+
+                            
+                            
+
+                            
+                            
+                      
+                        {/* <Nav.Link id="btn-home" className="btn-home" href="#home" >
                             <div className="btn-home-arrow">△</div>
-                        </Nav.Link>
+                        </Nav.Link> */}
                     </div>
                 </section>
 
+                {/* SECTION 3 */}
                 <section  id="projects">
                     <div className="bg-color-2">
                         <h1>section 3</h1>
-                        <Nav.Link id="btn-home" className="btn-home" href="#home" >
+                        {/* <Nav.Link id="btn-home" className="btn-home" href="#home" >
                             <div className="btn-home-arrow">△</div>
-                        </Nav.Link>
+                        </Nav.Link> */}
                     </div>
                 </section>
 
@@ -81,9 +229,9 @@ export default class ShowPage extends Component {
 
 
 
-                <Nav.Link id="btn-home" className="btn-home" href="#home" >
+                {/* <Nav.Link id="btn-home" className="btn-home" href="#home" >
                     <div className="btn-home-arrow">△</div>
-                </Nav.Link>
+                </Nav.Link> */}
 
             
 
