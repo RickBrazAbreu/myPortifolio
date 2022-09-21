@@ -29,6 +29,56 @@ ________________________________________________________________________________
 
 _____________________________________________________________________________________
 
+# SCROLL FUNCTION 
+
+## Explaining the scroll function
+- Basically I have a class >> display: 'block' << wich shows the element!
+- In the html.. I check the scroll if it roll down 500px... it add that class to the button (it turn on the button) , if it scroll less than 500px , it remove the class (it turn off the button)!
+
+## FIRST
+- Doing the scroll on/off: I created a class in the 
+"portifolio.css" file --->>> .show-btn{display: block;} <<--
+## SECOND
+- I had to addClass/removeClass and made sure to call the removeClass method on a set of jQuery elements..
+- To be able to do that I went to "index.html" file and add the the  ->> script scr="...." <<- as the example below.
+
+<!-- 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+          $(document).ready(function(){
+              $(window).scroll(function(){
+                // scroll-up button show/hide script
+                if(this.scrollY > 100){
+                    $("i").addClass("show-btn");
+                }else{
+                    $("i").removeClass("show-btn");
+                }
+              });
+              
+          });
+    </script>
+ -->
+
+
+
+
+- addClass / removeClass in a js file, first you need to make sure to call the removeClass method on a set of jQuery elements
+-
+
+Here is one of the errors I got during developing time for this scroll for this project!
+-To solve the "removeClass is not a function" error, make sure to call the removeClass method on a set of jQuery elements and place your JS script tag at the bottom of the body tag, after the DOM elements have been declared and jQuery is loaded.
+
+
+
+
+
+
+
+
+
+
+
+_____________________________________________________________________________________
 
 
 ## DEPLOYMENT

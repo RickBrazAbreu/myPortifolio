@@ -12,8 +12,8 @@ export default class NavBarTop extends Component {
                     <Navbar.Collapse id="basic-navbar-nav ">
                         <Nav className="me-auto">
                         <Nav.Link  href="#home"> <p className="word-color-white">Home</p></Nav.Link>
-                        <Nav.Link  href="#about-me"> <p className="word-color-white">About Me</p></Nav.Link>
                         <Nav.Link  href="#projects"> <p className="word-color-white">Projects</p></Nav.Link>
+                        <Nav.Link  href="#about-me"> <p className="word-color-white">About me</p></Nav.Link>
                         <Nav.Link  href="#contact-me"> <p className="word-color-white">Contact Me</p> </Nav.Link>
                         {/* <NavDropdown title="Projects" id="basic-nav-dropdown">
 
