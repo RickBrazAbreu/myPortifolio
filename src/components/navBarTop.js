@@ -4,17 +4,18 @@ import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
 export default class NavBarTop extends Component {
     render() {
         return(
-            <div>
-                <Navbar  className="bg-nav-bar"  expand="lg navbar-expand-md ">
+            <ii >
+                
+                <Navbar id="navtop" className="navbar bg-nav-bar"  expand="lg navbar-expand-md ">
                     <Container>
-                    <Navbar.Brand  href="#home"> <p className="word-color-white">Portifolio</p></Navbar.Brand>
+                    <Navbar.Brand  href="#home"> <p className="nav-btn-scale word-color-white">Portfolio</p></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav ">
                         <Nav className="me-auto">
-                        <Nav.Link  href="#home"> <p className="word-color-white">Home</p></Nav.Link>
-                        <Nav.Link  href="#projects"> <p className="word-color-white">Projects</p></Nav.Link>
-                        <Nav.Link  href="#about-me"> <p className="word-color-white">About me</p></Nav.Link>
-                        <Nav.Link  href="#contact-me"> <p className="word-color-white">Contact Me</p> </Nav.Link>
+                        <Nav.Link  href="#home"> <p className="nav-btn-scale word-color-white">Home</p></Nav.Link>
+                        <Nav.Link  href="#projects"> <p className="nav-btn-scale word-color-white">Projects</p></Nav.Link>
+                        <Nav.Link  href="#about-me"> <p className="nav-btn-scale word-color-white">About me</p></Nav.Link>
+                        <Nav.Link  href="#contact-me"> <p className="nav-btn-scale word-color-white">Contact Me</p> </Nav.Link>
                         {/* <NavDropdown title="Projects" id="basic-nav-dropdown">
 
                             <NavDropdown.Item href="#action/3.1">TicTacToe</NavDropdown.Item>
@@ -31,8 +32,11 @@ export default class NavBarTop extends Component {
                     </Navbar.Collapse>
                     </Container>
                 </Navbar>
+
+               
                 
-            </div>
+                
+            </ii>
 
 
 

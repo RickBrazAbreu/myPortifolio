@@ -79,49 +79,52 @@ export default class ShowPage extends Component {
                 <div className="hold-sections">
                 
                     {/* SECTION 1 */}
-                    <section id="home">
+                    <section class="section1-home-color" id="home">
                         <div className="section1">
-                            <div className="introducing-section1">
+                            
+                                <div className="introducing-section1">
 
-                                <h1 className="word-color-white">Hey, I'm Pedro.</h1><br/>
-                                <h3 className="word-color-white">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
-                                <h3 className="word-color-white"> I create custom websites<br/>  to help businesses do better online.</h3>
-                                <div>
-                                    {/* HERE I made the text effect infinity loop in movement,.. */}
-                                    {""}
-                                    <Typical 
-                                    className="word-color-white"
-                                    loop={Infinity} 
-                                    //Steps Changing following time "1000.."
-                                    steps={[ 
-                                        "Ethusiastic Dev 🚨",
-                                        2000,
-                                        "Full Stack Developer 🤓",
-                                        2000,
-                                        "React Developer 🚀",
-                                        2000,
-                                        "Mongo Db / Express 💻",
-                                        2000,
-                                    ]}
-                                    />
+                                    <h1 className="word-color-white">Hey, I'm Pedro.</h1><br/>
+                                    <h3 className="word-color-white">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
+                                    <h3 className="word-color-white"> I create custom websites<br/>  to help businesses do better online.</h3>
+                                    <div>
+                                        {/* HERE I made the text effect infinity loop in movement,.. */}
+                                        {""}
+                                        <Typical 
+                                        className="word-color-white"
+                                        loop={Infinity} 
+                                        //Steps Changing following time "1000.."
+                                        steps={[ 
+                                            "Ethusiastic Dev 🚨",
+                                            2000,
+                                            "Full Stack Developer 🤓",
+                                            2000,
+                                            "React Developer 🚀",
+                                            2000,
+                                            "Mongo Db / Express 💻",
+                                            2000,
+                                        ]}
+                                        />
+                                    </div>
+                                    {/* <a>Fluent Portuguese English Spanish Game Developer</a> */}
                                 </div>
-                                {/* <a>Fluent Portuguese English Spanish Game Developer</a> */}
-                            </div>
-                            <div className="picture-profile">
-                            <img src={profilePicture} className="img-fluid prof-pic" alt="Responsive image"/>
-                            </div>
+                                <div className="picture-profile">
+                                <img src={profilePicture} className="img-fluid prof-pic" alt="Responsive image"/>
+                                </div>
+                               
+                            
                         </div>
                     </section>
 
                     {/* SECTION 2 */}
                     <section className="section2"  id="projects">
                         <div className="bg-color-2">
-                            <h1>PROJECTS</h1>
+                            <h1 className="section2-text-color">PROJECTS</h1>
                         
                                 <div>
                                     <div className="cards-holder" style={cardContainerStyle} >
                                         <div className="cardss">
-                                            <Card style={{ width: '18rem' }}>
+                                            <Card style={{ width: '18rem'}}>
                                                 <Card.Img variant="top" src={ProjectPicture1} />
                                                 <Card.Body>
                                                     <Card.Title>Card Title</Card.Title>
