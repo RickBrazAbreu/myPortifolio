@@ -132,7 +132,7 @@ export default class ShowPage extends Component {
                                                     Some quick example text to build on the card title and make up the
                                                     bulk of the card's content.
                                                     </Card.Text>
-                                                    <Button variant="primary">Go somewhere</Button>
+                                                    <Button variant="primary" href="https://themedicapp.herokuapp.com/" target="_blank">Go to Project</Button>
                                                 </Card.Body>
                                             </Card>
                                         </div>
@@ -145,7 +145,7 @@ export default class ShowPage extends Component {
                                                     Some quick example text to build on the card title and make up the
                                                     bulk of the card's content.
                                                     </Card.Text>
-                                                    <Button variant="primary">Go somewhere</Button>
+                                                    <Button variant="primary" href="https://themedicapp.herokuapp.com/" target="_blank">Go to Project</Button>
                                                 </Card.Body>
                                             </Card>
                                         </div>
@@ -158,7 +158,7 @@ export default class ShowPage extends Component {
                                                     Some quick example text to build on the card title and make up the
                                                     bulk of the card's content.
                                                     </Card.Text>
-                                                    <Button variant="primary">Go somewhere</Button>
+                                                    <Button variant="primary" href="https://themedicapp.herokuapp.com/" target="_blank">Go to Project</Button>
                                                 </Card.Body>
                                             </Card>
                                         </div>
@@ -173,26 +173,36 @@ export default class ShowPage extends Component {
                     <section  id="about-me">
                         <div className="bg-color-3">
                             <h1>section 3</h1>
+
+                        
+                        </div>
+                    </section>
+                    {/* SECTION 4 */}
+                    <section  id="contact-me">
+                        <div className="section4">
+                            <h1 className="section3-text-center">Contact Me</h1>
+                            
                         
                         </div>
                     </section>
 
-                    {/* <Nav.Link className="btn-home" href="#home">
-                        <div className="btn-home-arrow">△</div>
-                    </Nav.Link> */}
+                    
 
                 </div>
 
                <i id="btn-home" className="show-btn">
-                    <Nav.Link   href="#home" >
-                            <div>△</div>
+                   
+                   <Nav.Link  className="btn-logo"  href="#navtop" >
+                   <p className="btn-center">△</p>
+       
                     </Nav.Link>
+
+                   
+                    
                </i>
                     
                 
-                {/* <div class="scroll-up-btn">
-                    <i class="fas fa-angle-up"></i>
-                </div> */}
+                
 
 
                 
