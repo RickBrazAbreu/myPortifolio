@@ -80,6 +80,13 @@ Here is one of the errors I got during developing time for this scroll for this 
 
 _____________________________________________________________________________________
 
+# Contact me
+
+- Here to do the email part "contact me" .. I hade also to install:
+ npm i axios react-toastify
+
+
+
 
 ## DEPLOYMENT
 - LINK DEPLOYMENT:  https://portifolio-abreu-hoff.herokuapp.com/

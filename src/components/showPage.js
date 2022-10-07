@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React,  { Component } from "react";
 // import { Container} from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
 import profilePicture from '../imgs/profile.JPEG'
@@ -9,7 +9,8 @@ import Typical from 'react-typical'
 import CardsProjects from "../cards/cards";
 import ProjectPicture1 from '../imgs/medics.jpeg'
 import Card from 'react-bootstrap/Card';
-
+import ContactMe from "../contactMe/contactme";
+import { useState } from 'react';
 
 
 
@@ -17,52 +18,25 @@ import Card from 'react-bootstrap/Card';
 
 
 export default class ShowPage extends Component {
-    render() {
+
+
+
+
+    
+     render() {
+
         // STYLE FOR CARDs
         const cardContainerStyle = {
             display: 'flex',
             flexFlow: 'row wrap',
         }
+
+       
         
-        // $(document).ready(function () {
-        //     //your code here
-        //     window.addEventListener('scroll', () =>{
-        //         const scrolled = window.scrollY;
-    
-        //         if(this.scrollY > 200){
-        //             document.getElementById( '.btn-home' ).addClass( "show-btn" )
-        //             //document.getElementById("btn-home").addClass("show-btn")
-        //         }else{
-        //             document.getElementById( '.btn-home' ).removeClass( "show-btn" )
-        //             //document.getElementById("btn-home").removeClass("show-btn")
-        //         }
-                
-        //        // $( "p" ).removeClass( "myClass noClass" ).addClass( "yourClass" );
-        //         // if(this.scrollY > 500){
-        //         //     $('.scroll-up-btn').addClass("show");
-        //         // }else{
-        //         //     $('.scroll-up-btn').removeClass("show");
-        //         // }
-    
-        //     })
-        //   });
+        
         window.addEventListener('scroll', () =>{
             const scrolled = window.scrollY;
 
-            // if(this.scrollY > 200){
-            //     document.getElementById( '.btn-home' ).addClass( "show-btn" )
-            //     //document.getElementById("btn-home").addClass("show-btn")
-            // }else{
-            //     document.getElementById( '.btn-home' ).removeClass( "show-btn" )
-            //     //document.getElementById("btn-home").removeClass("show-btn")
-            // }
-            
-           // $( "p" ).removeClass( "myClass noClass" ).addClass( "yourClass" );
-            // if(this.scrollY > 500){
-            //     $('.scroll-up-btn').addClass("show");
-            // }else{
-            //     $('.scroll-up-btn').removeClass("show");
-            // }
 
         })
 
@@ -181,6 +155,22 @@ export default class ShowPage extends Component {
                     <section  id="contact-me">
                         <div className="section4">
                             <h1 className="section3-text-center">Contact Me</h1>
+                            <div className="col">
+                            <div className="cols-icon">
+                                <a href="https://www.linkedin.com/in/henrique-abreu-hoff/">
+                                    <v className="fab fa-linkedin"/>
+                                </a>
+                                <a href="https://github.com/RickBrazAbreu?tab=repositories">
+                                    <v className="fab fa-github"/>
+                                </a>
+
+                            </div>
+
+                            </div>
+                           
+                            <ContactMe/>
+
+                            
                             
                         
                         </div>

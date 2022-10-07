@@ -221,6 +221,10 @@
     align-items: center;
 }
 
+button .load img{
+    width: 60px;
+    color: green;
+}
 
 
 
