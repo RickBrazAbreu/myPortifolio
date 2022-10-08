@@ -1,0 +1,43 @@
+button .load img{
+    width: 60px;
+    color: green;
+    border-radius: 20px;
+}
+.btn-contactme{
+    border-radius: 10px;
+}
+.hold-email{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+/* Responsive mobile tablet */
+
+
+@media  screen and (max-width: 810px){
+    .hold-email{
+        /* background: linear-gradient(to bottom, rgb(8, 23, 57) 40%, rgb(94, 114, 205) 80%); */
+
+        /* this line make the flex reverse that means instead being on horizontal it became vertical for all the itens or divs inside this box */
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+        /* margin-left: 35%; */
+    }
+   
+    
+}
+@media  screen and (max-width: 460px){
+    .hold-email{
+        /* background: linear-gradient(to bottom, rgb(8, 23, 57) 40%, rgb(94, 114, 205) 80%); */
+        /* this line make the flex reverse that means instead being on horizontal it became vertical for all the itens or divs inside this box */
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+        /* margin-left: 25%; */
+    }
+    
+}
+
+
+/*  ---------------------------  */

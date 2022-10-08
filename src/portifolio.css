@@ -221,10 +221,11 @@
     align-items: center;
 }
 
-button .load img{
+/* this part of the stlye code is inside the contactme.css */
+/* button .load img{
     width: 60px;
     color: green;
-}
+} */
 
 
 

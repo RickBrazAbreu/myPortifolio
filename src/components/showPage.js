@@ -191,16 +191,7 @@ export default class ShowPage extends Component {
                     
                </i>
                     
-                
-                
-
-
-                
-                
-
-            
-
-                
+        
             </div>
             
             

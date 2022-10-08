@@ -6,6 +6,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify';
 import { useState } from 'react';
 import { useRef } from "react";
+import "./contactme.css"
 
 
 export default function ContactMe() {
@@ -13,7 +14,7 @@ export default function ContactMe() {
         const [name, setName] = useState("")
         const [email, setEmail] = useState("")
         const [message, setMessage] = useState("")
-        const [banner, setBanner] = useState("")
+        // const [banner, setBanner] = useState("")
         const [bool, setBool] = useState(false)
 
         const handleName =  (e) =>{
@@ -26,7 +27,7 @@ export default function ContactMe() {
             setMessage(e.target.value);
         };
         console.log(name);
-        const submitForm = async(e) =>{
+        const submitForm = async (e) =>{
             e.preventDefault();
 
             try {
@@ -38,11 +39,11 @@ export default function ContactMe() {
                 setBool(true)
                 const res = await axios.post('/contact', data)
                 if(name.length === 0 || email.length === 0 || message.length === 0){
-                    setBanner(res.data.msg)
+                    // setBanner(res.data.msg)
                     toast.error(res.data.msg)
                     setBool(false)
                 }else if(res.status=== 200){
-                    setBanner(res.data.msg)
+                    // setBanner(res.data.msg)
                     toast.success(res.data.msg)
                     setBool(false)
 
@@ -95,8 +96,10 @@ export default function ContactMe() {
                                     <h4>Send Your Email Here!</h4>
                                 </div>
 
-                                <form onSubmit={submitForm}>
-                                    <p>{banner}</p>
+                               
+
+                                <form className="hold-email" onSubmit={submitForm}>
+                                    {/* //<p>{banner}</p> */}
                                     <label htmlFor="name">Name</label>
                                     <input type='text' onChange={handleName}/>
 
@@ -107,14 +110,16 @@ export default function ContactMe() {
                                     <textarea type='text' onChange={handleMessage}/>
 
                                     <div className="send-btn">
-                                        <button type="submit">
-                                            send<z className="fab fa-paper-plane"></z>
-                                            {bool? (<b className="load">
+                                        <button className="btn-contactme" type="submit">
+                                            send
+                                            <z className="fa fa-paper-plane"></z>
+                                            {bool?(<b className="load">
                                                 <img src={load1} alt="image not responding"/>
                                             </b>):("")}
                                         </button>
                                     </div>
                                 </form>
+                               
 
                             </div>
 
