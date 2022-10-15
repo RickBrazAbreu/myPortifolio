@@ -93,7 +93,7 @@ export default class ShowPage extends Component {
                     {/* SECTION 2 */}
                     <section className="section2"  id="projects">
                         <div className="bg-color-2">
-                            <h1 className="section2-text-color">PROJECTS</h1>
+                            <h1 className="section2-text-color">Projects</h1>
                         
                                 <div>
                                     <div className="cards-holder" style={cardContainerStyle} >
@@ -101,7 +101,7 @@ export default class ShowPage extends Component {
                                             <Card style={{ width: '18rem'}}>
                                                 <Card.Img variant="top" src={ProjectPicture1} />
                                                 <Card.Body>
-                                                    <Card.Title>Card Title</Card.Title>
+                                                    <Card.Title>Card era antigo</Card.Title>
                                                     <Card.Text>
                                                     Some quick example text to build on the card title and make up the
                                                     bulk of the card's content.
@@ -109,6 +109,9 @@ export default class ShowPage extends Component {
                                                     <Button variant="primary" href="https://themedicapp.herokuapp.com/" target="_blank">Go to Project</Button>
                                                 </Card.Body>
                                             </Card>
+                                        </div>
+                                        <div className="cardss">
+                                            <CardsProjects/>
                                         </div>
                                         <div className="cardss">
                                             <Card style={{ width: '18rem' }}>
@@ -146,29 +149,35 @@ export default class ShowPage extends Component {
                     {/* SECTION 3 */}
                     <section  id="about-me">
                         <div className="bg-color-3">
-                            <h1>section 3</h1>
+                            <h1 className="section3-text-color">About me</h1>
 
                         
                         </div>
                     </section>
+
+
                     {/* SECTION 4 */}
                     <section  id="contact-me">
                         <div className="section4">
-                            <h1 className="section3-text-center">Contact Me</h1>
+                            <h1 className="section4-text-color">Contact me</h1>
                             <div className="col">
                             <div className="cols-icon">
-                                <a href="https://www.linkedin.com/in/henrique-abreu-hoff/">
-                                    <v className="fab fa-linkedin"/>
+                                <a className="icon-contact" href="https://www.linkedin.com/in/henrique-abreu-hoff/" target="_blank">
+                                    <v className="fab fa-linkedin fa-4x"/>
                                 </a>
-                                <a href="https://github.com/RickBrazAbreu?tab=repositories">
-                                    <v className="fab fa-github"/>
+                                <a className="icon-contact" href="https://github.com/RickBrazAbreu?tab=repositories" target="_blank">
+                                    <v className="fab fa-github fa-4x"/>
                                 </a>
 
                             </div>
 
+                            </div>
+
+                            <div className="section4-text-color section4-email">
+                                <h1>Email:  henriqueibtou@gmail.com</h1>
                             </div>
                            
-                            <ContactMe/>
+                            {/* <ContactMe/> */}
 
                             
                             
