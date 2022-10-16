@@ -7,10 +7,13 @@ import Button from 'react-bootstrap/Button';
 import { Navbar, Nav, NavDropdown, Container, Row} from 'react-bootstrap'
 import Typical from 'react-typical'
 import CardsProjects from "../cards/cards";
-import ProjectPicture1 from '../imgs/medics.jpeg'
+
 import Card from 'react-bootstrap/Card';
 import ContactMe from "../contactMe/contactme";
 import { useState } from 'react';
+
+import ProjectPicture1 from '../imgs/medics.jpeg'
+import AmazonGamePicture from '../imgs/amazongame.jpeg'
 
 
 
@@ -98,42 +101,64 @@ export default class ShowPage extends Component {
                                 <div>
                                     <div className="cards-holder" style={cardContainerStyle} >
                                         <div className="cardss">
-                                            <Card style={{ width: '18rem'}}>
+                                            <Card className="whitboard-text-cards" style={{ width: '18rem', height:'345.1px'}}>
                                                 <Card.Img variant="top" src={ProjectPicture1} />
-                                                <Card.Body>
-                                                    <Card.Title>Card era antigo</Card.Title>
-                                                    <Card.Text>
-                                                    Some quick example text to build on the card title and make up the
-                                                    bulk of the card's content.
+                                                <Card.Body className="text-inthe-cards">
+                                                    <Card.Title>Medics</Card.Title>
+                                                    <Card.Text class="overflow-auto">
+                                                    <div className="scroll-div">
+                                                        <div className="scroll-object">
+                                                        This is a MERN stack application using Node.js and React.For the styling in the front-end were used Bootstrap.
+                                                        The client connects via Express with Mongoose to the MongoDB server on the backend.
+                                                        Patient data is seeded in the mongoDB server according to the patient model. After that, the data can be manipulated by
+                                                        authenticated users inside the client.
+                                                        App using React, JavaScript, HTML, CSS, Express, MongoDB, Mongoose, deployment with Heroku.
+
+                                                        
+                                                        </div>
+                                                    </div>
+                                                   
                                                     </Card.Text>
                                                     <Button variant="primary" href="https://themedicapp.herokuapp.com/" target="_blank">Go to Project</Button>
                                                 </Card.Body>
                                             </Card>
                                         </div>
+                                        
                                         <div className="cardss">
-                                            <CardsProjects/>
-                                        </div>
-                                        <div className="cardss">
-                                            <Card style={{ width: '18rem' }}>
-                                                <Card.Img variant="top" src={ProjectPicture1} />
-                                                <Card.Body>
-                                                    <Card.Title>Card Title</Card.Title>
-                                                    <Card.Text>
-                                                    Some quick example text to build on the card title and make up the
-                                                    bulk of the card's content.
+                                            <Card style={{ width: '18rem', height:'345.1px' }}>
+                                                <Card.Img  className="img-inthe-cards" variant="top" src={AmazonGamePicture} />
+                                                <Card.Body className="text-inthe-cards">
+                                                    <Card.Title>Amazon Game</Card.Title>
+                                                    <Card.Text  class="overflow-auto ">
+                                                       
+                                                        <div className="scroll-div">
+                                                        <div className="scroll-object">
+                                                        Game made during the BootCamp at General Assembly.
+                                                        App using JavaScript, HTML, CSS,deployment with Netfly
+                                                        
+                                                        </div>
+                                                        </div>
+                                                    {/* Game made during the BootCamp at General Assembly.
+                                                    App using JavaScript, HTML, CSS,deployment with Netfly */}
                                                     </Card.Text>
-                                                    <Button variant="primary" href="https://themedicapp.herokuapp.com/" target="_blank">Go to Project</Button>
+                                                    <Button variant="primary" href="https://benevolent-clafoutis-be601c.netlify.app" target="_blank">Go to Project</Button>
                                                 </Card.Body>
                                             </Card>
                                         </div>
                                         <div className="cardss">
-                                            <Card style={{ width: '18rem' }}>
+                                            <Card style={{ width: '18rem', height:'345.1px' }}>
                                                 <Card.Img variant="top" src={ProjectPicture1} />
-                                                <Card.Body>
+                                                <Card.Body className="text-inthe-cards">
                                                     <Card.Title>Card Title</Card.Title>
-                                                    <Card.Text>
-                                                    Some quick example text to build on the card title and make up the
-                                                    bulk of the card's content.
+                                                    <Card.Text class="overflow-auto">
+                                                    <div className="scroll-div">
+                                                        <div className="scroll-object">
+                                                        Some quick example text to build on the card title and make up the
+                                                        bulk of the card's content.
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
                                                     </Card.Text>
                                                     <Button variant="primary" href="https://themedicapp.herokuapp.com/" target="_blank">Go to Project</Button>
                                                 </Card.Body>
