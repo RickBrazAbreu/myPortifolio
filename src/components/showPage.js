@@ -132,7 +132,7 @@ export default class ShowPage extends Component {
                                                     <div className="scroll-div">
                                                         <div className="scroll-object">
                                                         Game made during the BootCamp at General Assembly.
-                                                        App using JavaScript, HTML, CSS,deployment wi
+                                                        App using JavaScript, HTML, CSS,deployment with Netfly.
                                                         
                                                         </div>
                                                     </div>
