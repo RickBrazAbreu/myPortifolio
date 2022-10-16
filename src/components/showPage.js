@@ -101,7 +101,7 @@ export default class ShowPage extends Component {
                                 <div>
                                     <div className="cards-holder" style={cardContainerStyle} >
                                         <div className="cardss">
-                                            <Card className="whitboard-text-cards" style={{ width: '18rem', height:'345.1px'}}>
+                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'390px'}}>
                                                 <Card.Img variant="top" src={ProjectPicture1} />
                                                 <Card.Body className="text-inthe-cards">
                                                     <Card.Title>Medics</Card.Title>
@@ -123,47 +123,28 @@ export default class ShowPage extends Component {
                                                 </Card.Body>
                                             </Card>
                                         </div>
-                                        
                                         <div className="cardss">
-                                            <Card style={{ width: '18rem', height:'345.1px' }}>
-                                                <Card.Img  className="img-inthe-cards" variant="top" src={AmazonGamePicture} />
+                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'390px'}}>
+                                                <Card.Img variant="top" src={AmazonGamePicture} />
                                                 <Card.Body className="text-inthe-cards">
                                                     <Card.Title>Amazon Game</Card.Title>
-                                                    <Card.Text  class="overflow-auto ">
-                                                       
-                                                        <div className="scroll-div">
+                                                    <Card.Text class="overflow-auto">
+                                                    <div className="scroll-div">
                                                         <div className="scroll-object">
                                                         Game made during the BootCamp at General Assembly.
-                                                        App using JavaScript, HTML, CSS,deployment with Netfly
+                                                        App using JavaScript, HTML, CSS,deployment wi
                                                         
                                                         </div>
-                                                        </div>
-                                                    {/* Game made during the BootCamp at General Assembly.
-                                                    App using JavaScript, HTML, CSS,deployment with Netfly */}
+                                                    </div>
+                                                   
                                                     </Card.Text>
                                                     <Button variant="primary" href="https://benevolent-clafoutis-be601c.netlify.app" target="_blank">Go to Project</Button>
                                                 </Card.Body>
                                             </Card>
                                         </div>
-                                        <div className="cardss">
-                                            <Card style={{ width: '18rem', height:'345.1px' }}>
-                                                <Card.Img variant="top" src={ProjectPicture1} />
-                                                <Card.Body className="text-inthe-cards">
-                                                    <Card.Title>Card Title</Card.Title>
-                                                    <Card.Text class="overflow-auto">
-                                                    <div className="scroll-div">
-                                                        <div className="scroll-object">
-                                                        Some quick example text to build on the card title and make up the
-                                                        bulk of the card's content.
-                                                        </div>
-                                                        
-                                                    </div>
-                                                    
-                                                    </Card.Text>
-                                                    <Button variant="primary" href="https://themedicapp.herokuapp.com/" target="_blank">Go to Project</Button>
-                                                </Card.Body>
-                                            </Card>
-                                        </div>
+                                        
+                                       
+                                        
                                     </div>
                                     
                                 </div>

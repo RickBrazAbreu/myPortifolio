@@ -99,7 +99,7 @@
 /* } */
 .scroll-div{
     /* background-color: blue; */
-    height: 70px;
+    height: 120px;
     overflow: hidden;
     overflow-y: scroll;
 
