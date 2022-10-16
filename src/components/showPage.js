@@ -101,7 +101,7 @@ export default class ShowPage extends Component {
                                 <div>
                                     <div className="cards-holder" style={cardContainerStyle} >
                                         <div className="cardss">
-                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'390px'}}>
+                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'410px'}}>
                                                 <Card.Img variant="top" src={ProjectPicture1} />
                                                 <Card.Body className="text-inthe-cards">
                                                     <Card.Title>Medics</Card.Title>
@@ -124,15 +124,28 @@ export default class ShowPage extends Component {
                                             </Card>
                                         </div>
                                         <div className="cardss">
-                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'390px'}}>
+                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'410px'}}>
                                                 <Card.Img variant="top" src={AmazonGamePicture} />
                                                 <Card.Body className="text-inthe-cards">
                                                     <Card.Title>Amazon Game</Card.Title>
                                                     <Card.Text class="overflow-auto">
                                                     <div className="scroll-div">
                                                         <div className="scroll-object">
-                                                        Game made during the BootCamp at General Assembly.
-                                                        App using JavaScript, HTML, CSS,deployment with Netfly.
+                                                        - This is a game I made while attending the #generalassembly Coding BootCamp.
+                                                        - App using JavaScript, HTML, CSS,deployment with Netfly.
+
+                                                        - This game is a desktop version. (No mobile).
+                                                        - A game that presented me with many challenges, but I never gave up.
+                                                        - To create this game I used JavaScript, HTML , CSS and a lot of Patience lol.
+                                                        - I had to put a lot functions running simultaneously checking every movement the
+                                                        character made inside the canvas.
+                                                        - Also, to implement the "Enemies" in the game I had to console.log and check every
+                                                        distance in the game to make sure the enemies were placed in the correct spots!
+                                                        - I had to add colliders on every object in the scene ex: platforms, the river, ground,
+                                                        enemies and also the player.
+                                                        
+                                                        
+                                                        
                                                         
                                                         </div>
                                                     </div>
