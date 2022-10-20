@@ -14,6 +14,10 @@ import { useState } from 'react';
 
 import ProjectPicture1 from '../imgs/medics.jpeg'
 import AmazonGamePicture from '../imgs/amazongame.jpeg'
+import tictactoePicture from '../imgs/tictactoe.jpeg'
+
+
+import divisa from '../imgs/stars.PNG'
 
 
 
@@ -60,10 +64,14 @@ export default class ShowPage extends Component {
                         <div className="section1">
                             
                                 <div className="introducing-section1">
-
+                                
                                     <h1 className="word-color-white">Hey, I'm Pedro.</h1><br/>
                                     <h3 className="word-color-white">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
-                                    <h3 className="word-color-white"> I create custom websites<br/>  to help businesses do better online.</h3>
+                                    <h3 className="word-color-white">Creative and responsible professional<br/> with excellent troubleshooting skills.</h3>
+
+                                    {/* <h1 className="word-color-white">Hey, I'm Pedro.</h1><br/>
+                                    <h3 className="word-color-white">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
+                                    <h3 className="word-color-white"> I create custom websites<br/>  to help businesses do better online.</h3> */}
                                     <div>
                                         {/* HERE I made the text effect infinity loop in movement,.. */}
                                         {""}
@@ -91,6 +99,10 @@ export default class ShowPage extends Component {
                                
                             
                         </div>
+                        <div className="divisa-img-adjuste">
+                          <img className="divisa-img" src={divisa}/>
+                        </div>
+                        
                     </section>
 
                     {/* SECTION 2 */}
@@ -101,7 +113,7 @@ export default class ShowPage extends Component {
                                 <div>
                                     <div className="cards-holder" style={cardContainerStyle} >
                                         <div className="cardss">
-                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'410px'}}>
+                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'auto'}}>
                                                 <Card.Img variant="top" src={ProjectPicture1} />
                                                 <Card.Body className="text-inthe-cards">
                                                     <Card.Title>Medics</Card.Title>
@@ -119,12 +131,18 @@ export default class ShowPage extends Component {
                                                     </div>
                                                    
                                                     </Card.Text>
-                                                    <Button variant="primary" href="https://themedicapp.herokuapp.com/" target="_blank">Go to Project</Button>
+                                                    <div >
+                                                      <Button className="btn-proj" variant="primary" href="https://themedicapp.herokuapp.com/" target="_blank">Go to Project</Button>
+                                                      <Button className="btn-proj" variant="primary" href="https://github.com/RickBrazAbreu/ga-project-3-client" target="_blank">GitHub</Button>
+                                                    </div>
+
                                                 </Card.Body>
                                             </Card>
                                         </div>
+
+
                                         <div className="cardss">
-                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'410px'}}>
+                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'auto'}}>
                                                 <Card.Img variant="top" src={AmazonGamePicture} />
                                                 <Card.Body className="text-inthe-cards">
                                                     <Card.Title>Amazon Game</Card.Title>
@@ -144,18 +162,45 @@ export default class ShowPage extends Component {
                                                         - I had to add colliders on every object in the scene ex: platforms, the river, ground,
                                                         enemies and also the player.
                                                         
-                                                        
-                                                        
+                                                        </div>
+                                                    </div>
+                                                   
+                                                    </Card.Text>
+                                                    <div>
+                                                    <Button variant="primary" href="https://benevolent-clafoutis-be601c.netlify.app" target="_blank">Go to Project</Button>
+                                                    <Button className="btn-proj" variant="primary" href="https://github.com/RickBrazAbreu/Project1_AmzonGame" target="_blank">GitHub</Button>
+                                                    </div>
+                                                </Card.Body>
+                                            </Card>
+                                        </div>
+                                        
+
+                                        <div className="cardss">
+                                            <Card className="whitboard-text-cards" style={{ width: '19rem', height:'auto'}}>
+                                                <Card.Img variant="top" src={tictactoePicture} />
+                                                <Card.Body className="text-inthe-cards">
+                                                    <Card.Title>Medics</Card.Title>
+                                                    <Card.Text class="overflow-auto">
+                                                    <div className="scroll-div">
+                                                        <div className="scroll-object">
+                                                        This is a TicTacToe game, made with JavaScript controlling and checking with functions every movement in HTML and CSS. I added "addEventListener" in each block "div" inside the html,
+                                                        checking every click and returning false to a boolean as soon as you click on it, also everytime a boolean is returned false it automatically switch the "TurnPlayer" ,
+                                                        this way you got two active players having fun in the same time. When the game is done you have the button "RESTART" using "location.reload()" to reload the page.
+
                                                         
                                                         </div>
                                                     </div>
                                                    
                                                     </Card.Text>
-                                                    <Button variant="primary" href="https://benevolent-clafoutis-be601c.netlify.app" target="_blank">Go to Project</Button>
+                                                    <div>
+                                                       <Button className="btn-proj" variant="primary" href="https://inspiring-sable-10ea50.netlify.app/" target="_blank">Go to Project</Button>
+                                                       <Button className="btn-proj" variant="primary" href="https://inspiring-sable-10ea50.netlify.app/" target="_blank">GitHub</Button>
+                                                    </div>
+
                                                 </Card.Body>
                                             </Card>
                                         </div>
-                                        
+
                                        
                                         
                                     </div>
@@ -163,15 +208,28 @@ export default class ShowPage extends Component {
                                 </div>
                             
                         </div>
+                        <div className="divisa-img-adjuste">
+                          <img className="divisa-img" src={divisa}/>
+                        </div>
                     </section>
 
                     {/* SECTION 3 */}
                     <section  id="about-me">
                         <div className="bg-color-3">
-                            <h1 className="section3-text-color">About me</h1>
+                            <h1 className="section3-text-color">About me</h1> 
+                                <div className="text-aboutme">
+                                    <div className="text-aboutme-adjust">
+                                       <h1 className="word-color-white ">Hey, I'm Pedro.</h1><br/>
+                                       <h3 className="word-color-white ">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
+                                       <h3 className="word-color-white ">Creative and responsible professional<br/> with excellent troubleshooting skills.</h3>
+                                    </div>
+                                </div>
 
-                        
+                            <div className="divisa-img-adjuste">
+                              <img className="divisa-img" src={divisa}/>
+                            </div>
                         </div>
+                       
                     </section>
 
 
@@ -180,21 +238,25 @@ export default class ShowPage extends Component {
                         <div className="section4">
                             <h1 className="section4-text-color">Contact me</h1>
                             <div className="col">
-                            <div className="cols-icon">
-                                <a className="icon-contact" href="https://www.linkedin.com/in/henrique-abreu-hoff/" target="_blank">
-                                    <v className="fab fa-linkedin fa-4x"/>
-                                </a>
-                                <a className="icon-contact" href="https://github.com/RickBrazAbreu?tab=repositories" target="_blank">
-                                    <v className="fab fa-github fa-4x"/>
-                                </a>
-
+                                <div className="cols-icon">
+                                    <a className="icon-contact" href="https://www.linkedin.com/in/henrique-abreu-hoff/" target="_blank">
+                                        <v className="fab fa-linkedin fa-4x"/>
+                                    </a>
+                                    <a className="icon-contact" href="https://github.com/RickBrazAbreu?tab=repositories" target="_blank">
+                                        <v className="fab fa-github fa-4x"/>
+                                    </a>
+                                </div>
                             </div>
 
-                            </div>
-
-                            <div className="section4-text-color section4-email">
-                                <h1>Email:  henriqueibtou@gmail.com</h1>
-                            </div>
+                            {/* <div className="section4-text-color ">
+                                <h2 className="section4-email">Email:  henriqueibtou@gmail.com</h2>
+                            </div> */}
+                            <footer>
+                                <div className="section4-text-color ">
+                                    <h2 className="section4-email">Email:  henriqueibtou@gmail.com</h2>
+                                </div>   
+                            </footer>
+                            
                            
                             {/* <ContactMe/> */}
 
@@ -208,16 +270,11 @@ export default class ShowPage extends Component {
 
                 </div>
 
-               <i id="btn-home" className="show-btn">
-                   
-                   <Nav.Link  className="btn-logo"  href="#navtop" >
-                   <p className="btn-center">△</p>
-       
+                <i id="btn-home" className="show-btn">
+                    <Nav.Link  className="btn-logo"  href="#navtop" >
+                      <p className="btn-center">△</p>
                     </Nav.Link>
-
-                   
-                    
-               </i>
+                </i>
                     
         
             </div>
