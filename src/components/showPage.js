@@ -179,7 +179,7 @@ export default class ShowPage extends Component {
                                             <Card className="whitboard-text-cards" style={{ width: '19rem', height:'auto'}}>
                                                 <Card.Img variant="top" src={tictactoePicture} />
                                                 <Card.Body className="text-inthe-cards">
-                                                    <Card.Title>Medics</Card.Title>
+                                                    <Card.Title>TicTacToe</Card.Title>
                                                     <Card.Text class="overflow-auto">
                                                     <div className="scroll-div">
                                                         <div className="scroll-object">
@@ -194,7 +194,7 @@ export default class ShowPage extends Component {
                                                     </Card.Text>
                                                     <div>
                                                        <Button className="btn-proj" variant="primary" href="https://inspiring-sable-10ea50.netlify.app/" target="_blank">Go to Project</Button>
-                                                       <Button className="btn-proj" variant="primary" href="https://inspiring-sable-10ea50.netlify.app/" target="_blank">GitHub</Button>
+                                                       <Button className="btn-proj" variant="primary" href="https://github.com/RickBrazAbreu/TICTACTOE" target="_blank">GitHub</Button>
                                                     </div>
 
                                                 </Card.Body>
