@@ -65,9 +65,9 @@ export default class ShowPage extends Component {
                             
                                 <div className="introducing-section1">
                                 
-                                    <h1 className="word-color-white">Hey, I'm Pedro.</h1><br/>
-                                    <h3 className="word-color-white">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
-                                    <h3 className="word-color-white">Creative and responsible professional<br/> with excellent troubleshooting skills.</h3>
+                                    <h1 className="word-color-white">Hello, I'm Henrique.</h1><br/>
+                                    <h3 className="word-color-white">Full Stack Software Engineer<br/>General Assembly Alumni.</h3> 
+                                    <h3 className="word-color-white">Creative and responsible professional with excellent<br/> troubleshooting skills.</h3>
 
                                     {/* <h1 className="word-color-white">Hey, I'm Pedro.</h1><br/>
                                     <h3 className="word-color-white">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
@@ -220,9 +220,14 @@ export default class ShowPage extends Component {
                                 <div className="text-aboutme">
                                     <div className="text-aboutme-adjust">
                                        {/* <h1 className="word-color-white ">Hey, I'm Pedro.</h1><br/> */}
-                                       <h3 className="word-color-white ">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
-                                       <h3 className="word-color-white ">Creative and responsible professional<br/> with excellent troubleshooting skills.</h3>
-                                    </div>
+                                       <h3 className="word-color-white ">Full Stack Software Engineer<br/>General Assembly Alumni</h3> 
+                                       <h3 className="word-color-white ">Creative and responsible professional<br/> with excellent troubleshooting skills</h3>
+                                   
+                                       <h3 className="word-color-white ">Since my early years, I have been fascinated by computers and<br/> other technological devices.
+                                         It's a passion of mine to make visuals,<br/> such as illustrations and designs.
+                                          In addition, I enjoy analyzing situations and coming up<br/> with both the root of the issue and a workable solution.<br/>
+                                           I take pleasure in defining problems, conducting research, and creating workable solutions.</h3>
+                                        </div>
                                 </div>
 
                             <div className="divisa-img-adjuste">
