@@ -8,13 +8,13 @@ export default class NavBarTop extends Component {
                 
                 <Navbar id="navtop" className="navbar bg-nav-bar"  expand="lg navbar-expand-md ">
                     <Container>
-                    <Navbar.Brand  href="#navtop"> <p className="nav-btn-scale word-color-white">Portfolio</p></Navbar.Brand>
+                    {/* <Navbar.Brand  href="#navtop"> <p className="nav-btn-scale word-color-white">Portfolio</p></Navbar.Brand> */}
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav ">
                         <Nav className="me-auto">
                         <Nav.Link  href="#navtop"> <p className="nav-btn-scale word-color-white">Home</p></Nav.Link>
                         <Nav.Link  href="#projects"> <p className="nav-btn-scale word-color-white">Projects</p></Nav.Link>
-                        <Nav.Link  href="#about-me"> <p className="nav-btn-scale word-color-white">About me</p></Nav.Link>
+                        <Nav.Link  href="#about-me"> <p className="nav-btn-scale word-color-white">About Me</p></Nav.Link>
                         <Nav.Link  href="#contact-me"> <p className="nav-btn-scale word-color-white">Contact Me</p> </Nav.Link>
                         {/* <NavDropdown title="Projects" id="basic-nav-dropdown">
 

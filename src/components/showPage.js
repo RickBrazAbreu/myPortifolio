@@ -216,10 +216,10 @@ export default class ShowPage extends Component {
                     {/* SECTION 3 */}
                     <section  id="about-me">
                         <div className="bg-color-3">
-                            <h1 className="section3-text-color">About me</h1> 
+                            <h1 className="section3-text-color">About Me</h1> 
                                 <div className="text-aboutme">
                                     <div className="text-aboutme-adjust">
-                                       <h1 className="word-color-white ">Hey, I'm Pedro.</h1><br/>
+                                       {/* <h1 className="word-color-white ">Hey, I'm Pedro.</h1><br/> */}
                                        <h3 className="word-color-white ">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
                                        <h3 className="word-color-white ">Creative and responsible professional<br/> with excellent troubleshooting skills.</h3>
                                     </div>
@@ -236,7 +236,7 @@ export default class ShowPage extends Component {
                     {/* SECTION 4 */}
                     <section  id="contact-me">
                         <div className="section4">
-                            <h1 className="section4-text-color">Contact me</h1>
+                            <h1 className="section4-text-color">Contact Me</h1>
                             <div className="col">
                                 <div className="cols-icon">
                                     <a className="icon-contact" href="https://www.linkedin.com/in/henrique-abreu-hoff/" target="_blank">
