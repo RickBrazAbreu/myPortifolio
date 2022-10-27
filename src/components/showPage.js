@@ -67,7 +67,7 @@ export default class ShowPage extends Component {
                                 
                                     <h1 className="word-color-white">Hello, I'm Henrique.</h1><br/>
                                     <h3 className="word-color-white">Full Stack Software Engineer<br/>General Assembly Alumni.</h3> 
-                                    <h3 className="word-color-white">Creative and responsible professional with excellent<br/> troubleshooting skills.</h3>
+                                    <h3 className="word-color-white">Creative and responsible professional with excellent<br/> troubleshooting skills..</h3>
 
                                     {/* <h1 className="word-color-white">Hey, I'm Pedro.</h1><br/>
                                     <h3 className="word-color-white">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
