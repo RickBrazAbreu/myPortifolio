@@ -58,20 +58,20 @@ export default class ShowPage extends Component {
 
                 
                 <div className="hold-sections">
+                    <div className="my-name">
+                        <h1 className="adjusting-name">Henrique De Abreu</h1>
+                    </div>
                 
                     {/* SECTION 1 */}
                     <section class="section1-home-color" id="home">
                         <div className="section1">
-                            
+                            <div className="bg-sec1"> <h1 className="professional-info">Full-Stack Software Engineer</h1></div>
+                        
                                 <div className="introducing-section1">
-                                
-                                    <h1 className="word-color-white">Hello, I'm Henrique.</h1><br/>
+                                    {/* <h1 className="word-color-white"></h1><br/> */}
                                     <h3 className="word-color-white">Full Stack Software Engineer<br/>General Assembly Alumni.</h3> 
                                     <h3 className="word-color-white">Creative and responsible professional with excellent<br/> troubleshooting skills..</h3>
-
-                                    {/* <h1 className="word-color-white">Hey, I'm Pedro.</h1><br/>
-                                    <h3 className="word-color-white">Full Stack Software Engineering from<br/>General Assembly Alumni.</h3> 
-                                    <h3 className="word-color-white"> I create custom websites<br/>  to help businesses do better online.</h3> */}
+                                    {/* TEXT - ANIMATION */}
                                     <div>
                                         {/* HERE I made the text effect infinity loop in movement,.. */}
                                         {""}
@@ -98,7 +98,8 @@ export default class ShowPage extends Component {
                                 </div>
                                
                             
-                        </div>
+                        </div>  {/* SECTION 1 */}
+
                         <div className="divisa-img-adjuste">
                           <img className="divisa-img" src={divisa}/>
                         </div>
@@ -108,7 +109,7 @@ export default class ShowPage extends Component {
                     {/* SECTION 2 */}
                     <section className="section2"  id="projects">
                         <div className="bg-color-2">
-                            <h1 className="section2-text-color">Projects</h1>
+                            <h1 className="section2-text-color">MY WORK</h1>
                         
                                 <div>
                                     <div className="cards-holder" style={cardContainerStyle} >

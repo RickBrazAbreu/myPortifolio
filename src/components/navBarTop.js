@@ -4,34 +4,54 @@ import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
 export default class NavBarTop extends Component {
     render() {
         return(
+        
             <ii >
                 
-                <Navbar id="navtop" className="navbar bg-nav-bar"  expand="lg navbar-expand-md ">
+                 {/* <Navbar id="navtop" className="navbar bg-nav-bar nav-fix-open"  expand="lg navbar-expand-md ">
                     <Container>
-                    {/* <Navbar.Brand  href="#navtop"> <p className="nav-btn-scale word-color-white">Portfolio</p></Navbar.Brand> */}
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav ">
-                        <Nav className="me-auto">
+                     <Navbar.Brand  href="#navtop"> <p className="nav-btn-scale word-color-white">Portfolio</p></Navbar.Brand>
+                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                     <Navbar.Collapse id="basic-navbar-nav  " className="passing-tabs-flex">
+                        <Nav className="me-auto passing-tabs">
                         <Nav.Link  href="#navtop"> <p className="nav-btn-scale word-color-white">Home</p></Nav.Link>
-                        <Nav.Link  href="#projects"> <p className="nav-btn-scale word-color-white">Projects</p></Nav.Link>
-                        <Nav.Link  href="#about-me"> <p className="nav-btn-scale word-color-white">About Me</p></Nav.Link>
-                        <Nav.Link  href="#contact-me"> <p className="nav-btn-scale word-color-white">Contact Me</p> </Nav.Link>
-                        {/* <NavDropdown title="Projects" id="basic-nav-dropdown">
-
-                            <NavDropdown.Item href="#action/3.1">TicTacToe</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Travel Guide</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Virtual Store</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                            Separated link
-                            </NavDropdown.Item>
-                        </NavDropdown> */}
-                        {/* ola antes de contaa..c.*/}
-                        
+                        <Nav.Link  href="#projects"> <p className="nav-btn-scale word-color-white tabs">WORK</p></Nav.Link>
+                        <Nav.Link > <p className="nav-btn-scale word-color-white tabs tabs-i">|</p></Nav.Link>
+                        <Nav.Link  href="#about-me"> <p className="nav-btn-scale word-color-white tabs">ABOUT</p></Nav.Link>
+                        <Nav.Link  > <p className="nav-btn-scale word-color-white tabs tabs-i">|</p></Nav.Link>
+                        <Nav.Link  href="#contact-me"> <p className="nav-btn-scale word-color-white tabs">CONTACT</p> </Nav.Link>
                         </Nav>
-                    </Navbar.Collapse>
-                    </Container>
-                </Navbar>
+                     </Navbar.Collapse>
+                 </Container>
+                  </Navbar>  */}
+
+                  <Navbar bg="light" expand="lg navbar-expand-md">
+                        <Container>
+                            {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                            <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="me-auto">
+                                
+                                {/* <Nav.Link  href="#navtop"> <p className="nav-btn-scale word-color-white">Home</p></Nav.Link> */}
+                                <Nav.Link  href="#projects"> <p className="nav-btn-scale word-color-white tabs">WORK</p></Nav.Link>
+                                <Nav.Link > <p className="nav-btn-scale word-color-white tabs tabs-i">|</p></Nav.Link>
+                                <Nav.Link  href="#about-me"> <p className="nav-btn-scale word-color-white tabs">ABOUT</p></Nav.Link>
+                                <Nav.Link  > <p className="nav-btn-scale word-color-white tabs tabs-i">|</p></Nav.Link>
+                                <Nav.Link  href="#contact-me"> <p className="nav-btn-scale word-color-white tabs">CONTACT</p> </Nav.Link>
+                                    {/* <Nav.Link href="#home">Home</Nav.Link>
+                                    <Nav.Link href="#link">Link</Nav.Link>
+                                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                            <NavDropdown.Divider />
+                                            <NavDropdown.Item href="#action/3.4">
+                                                Separated link
+                                            </NavDropdown.Item>
+                                    </NavDropdown> */}
+                            </Nav>
+                            </Navbar.Collapse>
+                        </Container>
+                        </Navbar>
 
                
                 
